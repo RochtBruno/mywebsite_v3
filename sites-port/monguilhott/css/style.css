@@ -1,0 +1,520 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html,body{
+    height: 100%;
+}
+/*Framework*/
+.clear{
+    clear: both;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+.w50{
+    width: 50%;
+    float: left;
+}
+
+/*fim framework*/
+
+section.master-header{
+    width: 100%;
+    padding: 30px 0;
+    background-image: url('../images/bg_01.png');
+    background-position: center;
+    background-size: cover;
+}
+div.logo{
+    float: left;
+    width: 166px;
+    height: 64px;
+    background-image: url('../images/logo.png');
+    background-size: 100% 100%;
+    background-position: center;
+}
+div.container{
+    max-width: 1024px;
+}
+header{
+    border-bottom: 2px solid rgba(0, 148, 108, 0.5);
+    padding-bottom: 20px;
+}
+nav.mobile-menu{
+    display: none;
+    float: right;
+}
+nav.mobile-menu i{
+    color: rgb(0, 148, 108);
+    font-size: 35px;
+    position: relative;
+    top: 20px;
+    cursor: pointer;
+  
+}
+nav.mobile-menu ul{
+    list-style-type: none;
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 115px;
+    left: 0;
+    text-align: center;
+}
+nav.mobile-menu ul li{
+    background-color: white;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(0, 148, 108);
+}
+nav.mobile-menu ul li a{
+    text-decoration: none;
+    color: rgb(0, 148, 108);
+    font-size: 17px;
+    display: block;
+}
+
+header nav.desktop-menu{
+    float: left;
+    padding: 0 20px;
+}
+nav ul{
+    list-style-type: none;
+}
+nav.desktop-menu ul li{
+    display: inline-block;
+    padding: 18px 30px;
+    color: white;
+}
+.desktop-menu li.selected{
+    color: rgb(0, 148, 108);
+    position: relative;
+}
+.desktop-menu li.selected > span{
+    background-color: rgb(0, 148, 108);
+    position: absolute;
+    bottom: 17px;
+    width: 20px;
+    height: 3px;
+
+}
+nav.desktop-menu ul li a{
+    font-size: 17px;
+    text-decoration: none;
+    color: inherit;
+}
+div.telefone{
+    float: left;
+}
+div.telefone{
+    color: rgb(0, 148, 108);
+    padding: 18px 0;
+}
+/*Content header*/
+.content-header{
+    padding: 50px 0;
+}
+.content-header .container{
+    max-width: 1280px;
+}
+.one span{
+    font-weight: bold;
+}
+.one h2{
+    font-size: 37px;
+    color: rgb(0, 148, 108);
+    font-weight: normal;
+
+}
+.one p:nth-of-type(1){
+    padding: 20px 0;
+}
+.one form input[type=email]{
+    height: 50px;
+    width: 60%;
+    border: 1px solid rgb(0, 148, 108);
+    border-radius: 25px;
+    padding: 10px;
+}
+.one form input[type=email]:focus{
+    outline: none;
+}
+.one form input[type=submit]{
+    height: 50px;
+    width: 30%;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(0, 148, 108);
+    color: white;
+    border-radius: 25px;
+    margin: 0 10px;
+    font-size: 17px;
+}
+.one p:nth-of-type(2){
+    padding: 15px 0;
+    font-size: 13px;
+    color: rgb(0, 148, 108);
+}
+.two img{
+    border: 15px solid rgba(0, 0, 0, 0);
+    margin-left: 10px;
+}
+/*Diferenças*/
+
+section.diferencas{
+    padding: 60px 0;
+}
+section.diferencas .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+section.diferencas .box-single{
+    width: 33.3%;
+    padding: 20px;
+    margin: 10px 0;
+
+}
+.box-single i{
+    color: rgb(0, 148, 108);
+    font-size: 25px;;
+}
+.box-single h2{
+    color: black;
+    padding: 10px 0;
+}
+.box-single span{
+    color: rgb(0, 148, 108);
+}
+
+/*Sobre*/
+.sobre{
+    padding: 40px 0;
+    z-index: 1;
+}
+.sobre-box1 img{
+    max-width: 100%;
+}
+
+.sobre-box2{
+    padding: 0px 2% 50px 2%;
+}
+.sobre-box2 h2{
+    font-size: 23px;
+    font-weight: normal;
+    margin: 10px 0;
+}
+/*Depoimentos*/
+section.depoimentos{
+    margin-top: -130px;
+    padding-top:100px;
+    background-image: url('../images/bg_02.png');
+    background-size: cover;
+    z-index: 2;
+    position: relative;
+}
+.depoimentos-box{
+    text-align: center;
+    padding: 150px 0;
+}
+.depoimentos-box h2{
+    font-weight: normal;
+    font-size: 30px;
+}
+.depoimentos-box p{
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+/*Etapas*/
+section.etapas{
+    padding: 60px 0;
+}
+.etapas .container{
+    max-width: 1320px;
+}
+section.etapas .etapa-titulo{
+    text-align: center;
+    padding: 20px 0 60px 0;
+}
+.etapa-titulo h2{
+    font-weight: normal;
+}
+.etapa1-wraper{
+    width: 50%;
+    float: left;
+}
+.etapa1{
+    display: flex;
+    padding: 20px 0;
+}
+.etapa1 div.etapa-foto{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 148, 108);
+    border-radius: 100px;
+    display: inline-block;
+}
+.etapa1 span{
+    display: inline-block;
+    position: relative;
+    top: 70px;
+    left: 15px;
+    padding: 0 25px 0px 0px;
+}
+.etapa2-wraper{
+    width: 50%;
+    float: left;
+    padding: 0 2%;
+}
+.etapa2{
+    margin-bottom: 15px;
+}
+.circle-wraper{
+    width: 15%;
+    float: left;
+    margin-bottom: 50px;
+}
+.etapa2 .circle{
+    width: 80px;
+    height: 80px;
+    border: 2px solid rgb(0, 148, 108);
+    border-radius: 50%;
+    position: relative;
+}
+.line{
+    position: absolute;
+    top: 78px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    width: 1px;
+    background-color: rgb(0, 148, 108);
+    z-index: 99;
+}
+.circle span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    
+}
+.etapas-descricao-wraper{
+    width: 85%;
+    float: left;
+    margin-bottom: 50px;
+}
+.etapas-descricao{
+    padding: 0 2% 0 8%;
+    position:relative;
+    top: -10px;
+}
+.etapas-descricao h2{
+    padding-bottom: 8px;
+    padding-left: 10px;
+    color: rgb(0, 148, 108);
+    font-weight: normal;
+    font-size: 21px;
+}
+.etapas-descricao p{
+    padding-left: 10px;
+    font-size: 16px;
+}
+/*Aspectos*/
+.aspectos{
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+}
+.aspectos > h2{
+    font-weight: normal;
+    padding-bottom: 40px;
+}
+.aspectos1 h2{
+    font-weight: normal;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+.aspectos1 .item-aspecto{
+    padding: 10px 0;
+    position: relative;
+    display: inline-block;
+}
+.aspectos1 .line-aspecto{
+    position: absolute;
+    top: 50%;
+    left:0;
+    transform: rotate(358deg);
+    background-color: red;
+    width: 100%;
+    height: 1px;
+}
+
+.aspectos1 .item-aspecto span{
+    opacity: 0.5;
+    font-size: 20px;
+}
+.aspectos2{
+    border-left: 1px solid rgba(0, 148, 108, 0.5);
+}
+.aspectos2 h2{
+    font-weight:normal;
+    color: rgb(0, 148, 108);
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+.aspectos2 ul{
+    list-style-type: none;
+}
+.aspectos2 ul li{
+    padding: 10px 0;
+    font-size: 20px;
+    color: rgb(0, 148, 108);
+}
+/*Contato*/
+.contato{
+    padding: 60px 0;
+    background-color: rgba(0, 148, 108, 0.3);
+}
+.contato h2{
+    text-align: center;
+    padding: 20px 0;
+    color: rgb(0, 148, 108);
+}
+.contato .container{
+    max-width: 896px;
+}
+form.formulario input[type=text],
+form.formulario input[type=email]{
+    width: 70%;
+    display:block;
+    margin: 20px auto;
+    height: 60px;
+    border: 1px solid rgb(0, 148, 108);
+    border-radius: 40px;
+    padding: 15px;
+    font-size: 15px;
+}
+form.formulario input[type=text],
+form.formulario input[type=email]:focus{
+    outline: none;
+}
+form.formulario textarea{
+    width: 70%;
+    height: 150px;
+    resize: none;
+    margin: 15px auto;
+    display: block;
+    border: 1px solid rgb(0, 148, 108);
+    border-radius: 20px;
+    padding: 20px;
+}
+form.formulario textarea:focus{
+    outline: none;
+}
+form.formulario input[type=submit]{
+    width: 30%;
+    display: block;
+    margin: 15px auto;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(0, 148, 108);
+    font-size: 20px;
+    cursor: pointer;
+}
+/*Rodape*/
+.rodape{
+    padding: 30px 0;
+    background-color: rgba(0, 148, 108);
+    text-align: center;
+}
+footer p{
+    text-align: center;
+    padding-top: 25px;
+    color: white;
+}
+@media screen and (max-width: 1149px){
+    .two img{
+        width: 200px;
+        height: 200px;
+        margin-left: 20px;
+    }
+    div.telefone{
+        display: none;
+    }        
+}
+@media screen and (max-width:942px){
+    .two img{
+        width: 150px;
+        height: 150px;
+    } 
+    nav.desktop-menu ul li{
+        padding: 18px 15px;
+    }
+}
+@media screen and (max-width:834px){
+    nav.desktop-menu{
+        display: none;
+    }
+    div.telefone{
+        display: none;
+    }
+    nav.mobile-menu{
+        display: block;
+    }
+    .sobre-box1{
+        width: 100%;
+    }
+    .sobre-box2{
+        width: 100%;
+        text-align: center;
+    }
+    section.depoimentos{
+        margin-top: -110px;
+        padding-top:70px;
+    }
+}
+@media screen and (max-width: 768px){
+    section.master-header{
+        min-height: 600px;
+    }
+    .two img{
+        display: none;
+    }
+    .one{
+        width: 100%;
+        text-align: center;
+    }
+    section.diferencas .box-single{
+        width: 100%;
+        text-align: center;
+    
+    }
+    .etapa1-wraper{
+        width: 100%;
+    }
+    .etapa2-wraper{
+        padding: 30px 0;
+        width: 100%;
+    }
+    .aspectos1{
+        width: 100%;
+    }
+    .aspectos1 .item-aspecto span{
+        display: block;
+        padding: 0 50px;
+    }
+    .aspectos2{
+        margin-top: 50px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(0, 148, 108, 0.5);
+        border-left: none;
+        width: 100%;
+    }
+}

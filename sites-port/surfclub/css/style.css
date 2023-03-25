@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html,body{
+    height: 100%;
+}
+/*Classes auxiliares*/
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+.clear{
+    clear: both;
+}
+.w50{
+    width: 50%;
+    padding: 0 2%;
+    float: left;
+}
+.w100{
+    width: 100%;
+    padding: 0 2%;
+}
+/*Acaba classes auxiliares*/
+
+.layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+section.main{
+    position: relative;
+    background-image: url('../images/baw_beach.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 650px;
+    padding: 15px 0;
+}
+section.main header{
+    position: relative;
+    z-index: 2;
+    border-bottom: 1px solid white;
+    padding-bottom: 60px;
+}
+.icons-social{
+    float: right;
+}
+.icons-social a{
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+    margin: 0 15px;;
+}
+.logo{
+    float: left;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+nav.desktop-menu{
+    float: right;
+}
+nav.desktop-menu ul{
+    list-style-type: none;
+}
+nav.desktop-menu ul li{
+    display: inline-block;
+    margin: 30px 0;
+}
+nav.desktop-menu ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    transition: 0.5;
+}
+nav.desktop-menu ul li a:hover{
+    color: rgb(0, 157, 230);
+}
+nav.mobile-menu{
+    float: right;
+    display: none;
+}
+nav.mobile-menu i{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    position: relative;
+    top: 20px;
+
+}
+nav.mobile-menu ul{
+    list-style-type: none;
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 90px;
+    text-align: center;
+    background-color: black;
+    z-index: 2;
+
+}
+nav.mobile-menu ul li{
+    padding: 7px 0;
+    border-bottom: 1px solid rgb(0, 157, 230);
+}
+nav.mobile-menu ul li a{
+    text-decoration: none;
+    color: rgb(0, 157, 230);
+    font-size: 20px;
+    display: block;
+}
+.content-header{
+    max-width: 1024px;
+    padding: 90px 2%;
+    z-index: 1;
+    position: relative;
+}
+.content-header h2{
+    font-size: 44px;
+    color: white;
+}
+.content-header span{
+    color: rgb(0, 157, 230);
+}
+.content-header p{
+    color: white;
+    padding: 20px 0;
+}
+.content-header p:nth-of-type(2){
+    margin-bottom: 25px;
+}
+.content-header a{
+    text-decoration: none;
+    color: white;
+    padding: 15px 35px;
+    border-left: 2px solid rgb(0, 157, 230);
+    transition: 0.3s;
+}
+.content-header a:hover{
+    background-color: rgb(0, 157, 230);
+    border-radius: 35px;
+}
+.chamada-produtos{
+    padding: 20px 2%;
+    background-color: rgb(0, 157, 230);
+    text-align: center;
+    width: 100%;
+}
+.chamada-produtos h2{
+    color: white;
+    font-weight: normal;
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+    text-transform: uppercase;
+}
+.box-planos{
+    padding: 60px 0;
+}
+.box-planos .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box-planos-single{
+    border: 1px solid black;
+    width: 31%;
+    margin: 0 10px;
+    -webkit-box-shadow: 4px 2px 4px 3px rgba(0,0,0,0.7); 
+    box-shadow: 4px 2px 4px 3px rgba(0,0,0,0.7);
+}
+.box-planos-single h2{
+    background-color: rgb(0, 157, 230);
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    padding: 10px 0;
+}
+.box-planos-single p{
+    padding: 5px 0;
+    text-align: center;
+}
+.box-planos-single p i{
+    padding: 0 5px;
+}
+.preco{
+    text-align: center;
+    padding: 15px;
+}
+.preco h1{
+    font-weight: normal;
+    border-top: 2px solid #ccc;
+    font-size: 25px;
+}
+.sobre-parallax{
+    width: 100%;
+    min-height: 500px;
+    background-image: url('../images/surfer.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+}
+.sobre-parallax  .container{
+    position: relative;
+    z-index: 2;
+    margin: 40px auto;
+    max-width: 960px;
+    color: white;
+    text-align: center;
+}
+.sobre-parallax h2{
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.sobre-parallax p{
+    padding: 25px 2%;
+}
+.overlay-parallax{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.contato{
+    padding: 40px 0;
+}
+.formulario{
+    float: left;
+}
+.formulario h2{
+    font-weight: normal;
+    border-bottom: 2px solid black;
+    display: inline-block;
+    width: 50%;
+}
+.formulario input[type=text],
+.formulario input[type=email]{
+    width: 90%;
+    height: 60px;
+    padding: 20px 2%;
+    margin: 15px 0;
+}
+.formulario textarea{
+    width: 90%;
+    height: 100px;
+    resize: none;
+    padding: 20px 2%;
+}
+.formulario input[type=submit]{
+    width: 60%;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(0, 157, 230);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.equipe{
+    float: left;
+}
+.equipe h2{
+    font-weight: normal;
+    border-bottom: 2px solid black;
+    display: inline-block;
+    width: 60%;
+    margin-left: 4%;
+}
+.equipe > .w50{
+    width: 46%;
+    margin-left: 4%;
+}
+.box-equipe{
+    border: 1px solid black;
+    margin: 15px 0;
+    padding: 15px 2%;
+    min-height: 400px;
+    -webkit-box-shadow: 4px 4px 3px 0px #000000; 
+    box-shadow: 4px 4px 3px 0px #000000;
+}
+.box-equipe-topo{
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(201, 201, 201);
+    width: 80%;
+}
+.box-avatar{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 25px;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    left: 0;
+}
+.info-equipe{
+    display: inline-block;
+    width: 70%;
+    padding: 0 5px;
+}
+.info-equipe p{
+    padding: 0 2%;
+    width: 100%;
+}
+.box-equipe-descricao p{
+    padding: 15px 2%;
+    
+}
+footer{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(0, 157, 230);
+    color: white;
+    padding: 20px 2%;
+}
+@media screen and (max-width:768px){
+    .w50{
+        width: 100%;
+    }
+    nav.desktop-menu{
+        display: none;
+    }
+    nav.mobile-menu{
+        display: block;
+    }
+}
+@media screen and (max-width: 920px){
+    .box-planos-single{
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;  
+    }
+    .equipe > .w50{
+        width: 100%;
+        margin-left: 0;
+    }
+    .equipe h2{
+        margin-left: 0;
+    }
+    .info-equipe p{
+        padding: 0;
+    }
+
+   
+}
+

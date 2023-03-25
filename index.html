@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/c442a23036.js" crossorigin="anonymous"></script>
+    
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <title>Bruno Rocha | Front end developer</title>
+  </head>
+  <body>
+    <section class="main__bg" id="main__section">
+      
+      <div class="container__header">
+        <header>
+          <ul class="hidden">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#reference">Reference</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </header>
+      </div>
+      <input type="checkbox" id="hamburguer" style="display: none" />
+      <label for="hamburguer"><div class="hamburguer"></div></label>
+
+      <div class="img__bg">
+        <img src="images/main__bg.svg" alt="" />
+        
+      </div>
+      <div class="img__bg__mobile">
+        <img src="images/b.svg" />
+      </div>
+      <section class="social">
+        <div class="scroll-down">
+          <i class="fas fa-mouse"></i><span> scroll down</span>
+        </div>
+        <div class="social__icons">
+          <a href="https://github.com/RochtBruno" target="_blank"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/bruno-rocha-300b7419a/?locale=en_US" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:bruno.taveira.r0.382@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        </div>
+      </section>
+    </section>
+
+    <section class="about reveal" id="about">
+      <div class="container">
+        <div class="about__description">
+          <h1>Hi, I'm Bruno</h1>
+          <h3>Front end developer</h3>
+          <p>
+            Junior developer, who likes to impress people by making eye catching
+            desings and fast websites. Always looking for bring the highest
+            quality of work.
+          </p>
+          <a href="#contact">
+            <button class="about__contact">
+              Let's get in touch <i class="fas fa-paper-plane"></i>
+            </button>
+          </a>
+        </div>
+        <div class="about__photo">
+          <!--css-->
+        </div>
+      </div>
+    </section>
+
+    <a href="#" class="scroll__up" id="scroll-up">
+      <p>&uarr;</p>
+    </a>
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="skills__left reveal">
+          <img class="skills__bg reveal" src="images/skills__bg.svg" alt=""/>
+          <div class="skills__title">
+            <h1>Skills</h1>
+            <img src="images/curly__braces.svg" alt="" />
+          </div>
+          <h4>Languages used </h4>
+        </div>
+        <div class="skills__right">
+          <div class="skills__box-wraper ">
+            <div class="skills__box">
+              <i class="fa-brands fa-html5"></i>
+              <P>HTML</P>
+            </div>
+            <div class="skills__box">
+              <i class="fa-brands fa-css3"></i>
+              <P>CSS</P>
+            </div>
+            <div class="skills__box">
+              <i class="fa-brands fa-js-square"></i>
+              <P>JavaScript</P>
+            </div>
+
+            <div class="skills__box">
+              <i class="fa-brands fa-bootstrap"></i>
+              <P>Bootstrap</P>
+            </div>
+            <div class="skills__box">
+              <i class="fa-brands fa-react"></i>
+              <P>ReactJs</P>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio__bg">
+        <img src="images/potfolio__bg.svg" class="reveal" alt="" />
+      </div>
+      <div class="portfolio__title">
+        <h1>Portfolio</h1>
+        <p>Most recent work</p>
+      </div>
+
+      <div class="portfolio__box--wraper">
+        <div class="portfolio__box">
+          <div class="img__box" style="background-image: url('/images/img__box.svg');background-size: cover;"></div>
+          <div class="description__box">
+            <h2>Surf club website</h2>
+            <p>Made for those who want learn how to surf</p>
+            <a href="/sites-port/surfclub/" target="_blank"><button>Learn more</button></a>
+          </div>
+        </div>
+
+        <div class="portfolio__box">
+          <div class="img__box" style="background-image: url('/images/img__box--2.svg');background-size: cover;"></div>
+          <div class="description__box">
+            <h2>Gipsy Bold</h2>
+            <p>Made for an advertisiment company</p>
+            <a href="/sites-port/gipsybold/" target="_blank"><button>Learn more</button></a>
+          </div>
+        </div>
+
+        <div class="portfolio__box">
+          <div class="img__box" style="background-image: url('/images/img__box--3.svg');background-size: cover;"></div>
+          <div class="description__box">
+            <h2>Monguilhott</h2>
+            <p>Website made for a dentist office</p>
+            <a href="/sites-port/monguilhott/" target="_blank"><button>Learn more</button></a>
+          </div>
+        </div>
+        <div class="portfolio__box">
+          <div class="img__box" style="background-image: url('/images/img__box--6.svg'); background-size: cover;"></div>
+          <div class="description__box">
+            <h2>Bankist App</h2>
+            <p>Minimalist bank app (use br as username and 5555 as password,enjoy it!)</p>
+            <a href="/sites-port/bankistApp/" target="_blank"><button>Learn more</button></a>
+          </div>
+        </div>
+        <div class="portfolio__box">
+          <div class="img__box" style="background-image: url('/images/img__box--7.svg'); background-size: cover;"></div>
+          <div class="description__box">
+            <h2>Pig game</h2>
+            <p>It's funnier if you play with a friend, believe me.</p>
+            <a href="/sites-port/pigGame/" target="_blank"><button>Learn more</button></a>
+          </div>
+        </div>
+        <div class="portfolio__box">
+          <div class="img__box" style="background-image: url('/images/img__box--9.svg'); background-size: cover;"></div>
+          <div class="description__box">
+            <h2>Mapty</h2>
+            <p>For those who enjoy outdoor exercising</p>
+            <a href="/sites-port/mapty/" target="_blank"><button>Learn more</button></a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+      <div class="arrow__left"><i class="fas fa-arrow-left"></i></div>
+      <div class="arrow__right"><i class="fas fa-arrow-right"></i></div>
+    </section>
+
+    <section id="reference" class="reference">
+      <div class="container">
+        <h2 class="reveal">Recommendation letter</h2>
+        <p>"He is an outstanding student in
+          all respects. Bruno Rocha has proven that through hard work, follow-through, and teamwork,
+          he can accomplish tasks in a courteous and timely manner.
+          Bruno Rocha is well equipped to grow from the challenges that he is presented with. His
+          proactivity, good staging, and fast learning skills prepare his beautifully for your organization."</p>
+          <img class="reveal" src="images/alex_profile.png" alt="">
+          <span>Alex graduated with an engineering degree in new computer sciences from the School of Electrical and Computer Engineering at the University of Belgrade, Serbia.</span>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h1>Let's get in touch</h1>
+      <form
+      action="mailto:bruno.taveira.r0.382@gmail.com"
+      method="post"
+      enctype="text/plain"
+    >
+
+      <input type="text" name="name" placeholder="Your name"></input><br />
+      <input type="email" name="email" placeholder="Your email"></input><br />
+      <textarea name="message" id="" cols="30" rows="10" placeholder="Your message"></textarea><br />
+      <input type="submit" value="Send"/>
+    </form>
+    </section>
+    <footer>
+      <div class="container">
+        <a href="mailto:bruno.taveira.r0.382@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+      <p>All rights reserved &copy;</p>
+      <div class="social__footer"><a href="https://github.com/RochtBruno" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/bruno-rocha-300b7419a/?locale=en_US" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
