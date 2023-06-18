@@ -184,7 +184,7 @@ header ul li a:hover {
   padding: 90px 0;
   width: 30%;
   border-radius: 150px;
-  background-image: url("images/about__photo.svg");
+  background-image: url("images/foto\ linkedin.jpeg");
   background-size: cover;
   background-position: center;
 }
@@ -683,6 +683,9 @@ footer p {
   }
   .about {
     padding: 100px 0;
+  }
+  .skills__bg {
+    max-width: 100%;
   }
   .reference p {
     font-size: 22px;
